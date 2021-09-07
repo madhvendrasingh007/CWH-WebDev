@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Rows</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 2fr;        /*box 3 will take twice and rest will take one space*/
+            grid-auto-rows: 3fr;                    /*now except box 1,2,3 rest will take thrice space i.e box 4-10*/
+            grid-template-columns: 3fr 3fr;
+            grid-gap: 2rem;
+        }
+        .box{
+            background-color: cornflowerblue;
+            border: 2px solid blue;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+        }
+        .box:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is Box-1</div>
+        <div class="box">This is Box-2</div>
+        <div class="box">This is Box-3</div>
+        <div class="box">This is Box-4</div>
+        <div class="box">This is Box-5</div>
+        <div class="box">This is Box-6</div>
+        <div class="box">This is Box-7</div>
+        <div class="box">This is Box-8</div>
+        <div class="box">This is Box-9</div>
+        <div class="box">This is Box-10</div>
+    </div>
+</body>
+</html>

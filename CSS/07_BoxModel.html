@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-image: url(https://wallpapercave.com/wp/wp2324432.jpg) ;
+            background-size: cover;
+            
+        }
+        *{
+            box-sizing: border-box;
+            /* margin: 0;
+            padding: 0; by this by default margin and padding is automatically becomes 0 for all element on the webpage*/
+            text-align: center;
+        }
+        .container{
+            background-color: blanchedalmond;
+            border: 3px solid rgb(231, 255, 11);
+            padding: 20px;
+            /* padding-top, padding-left....
+               padding: 23px 56px 6px 79px; (top right bottom left) 
+               or
+               padding: 3px 12px  y(top/bottom) x(left/right )*/
+            margin: 20px 70px;
+            border-radius: 30px;
+            width: 300px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Box Model</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quos dolores? Incidunt tempora minus commodi, magni voluptates facere dolor quaerat.</p>
+    </div>
+
+    <div class="container">
+        <h3>Box Model</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quos dolores? Incidunt tempora minus commodi, magni voluptates facere dolor quaerat.</p>
+    </div>
+
+    <div class="container">
+        <h3>Box Model</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quos dolores? Incidunt tempora minus commodi, magni voluptates facere dolor quaerat.</p>
+    </div>
+
+    <img src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png" alt="" >
+    <p style="color: cornsilk;">Above diagram depicts the box model. <br>Blue shows element, padding means space between border and element, margin is the sapce between borders.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAriable/Custom Properties</title>
+    <style>
+        :root{
+            --bg-color: yellow;             /*global variable calling*/
+            
+        }
+        .box{
+            /* Variable declaration 
+            it is a local variable which can only be used in .box only*/
+            --box-color: cyan;
+            width: 200px;
+            height: 150px;
+            background-color: var(--box-color);      /*loacal variable calling*/
+            border: 4px solid red;
+            margin: 3px;
+            box-shadow: 7px 7px var(--box-color);
+        }
+        .container{
+            display: flex;
+            background-color:var(--bg-color);       /*global variable calling*/
+            align-items: center;
+            justify-content: center;        /*to align item in center*/
+        }
+        .box:hover{
+            background-color: var(--bg-color);      /*global variable calling*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

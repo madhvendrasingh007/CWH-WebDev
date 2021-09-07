@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the container as a flex box  */
+            display: flex;
+
+            /* flex properties for flex container  */
+               /* flex-direction: row;  */
+               /* flex-direction: column;  */
+               /* flex-direction: row-reverse; */
+               /* flex-direction: column-reverse; */
+            
+
+            /* flex-wrap: wrap; */
+            /* or simply write 
+                    flex-flow: row wrap;
+               for flex-direction and flex wrap   
+            */
+
+            justify-content: center;
+            
+            justify-content: space-between;
+            /* space between all blocks is equal except main border  */
+
+            justify-content: space-evenly;
+            /* space between all blocks is equal including main border  */
+
+            justify-content: space-around;
+            /* space between all blocks is equal including half space between main border  eg: main border (2px space) content border (4px space) 2nd content border (4px space) 3rd content border (2px space) main border end */
+            
+            /* align container veritcally cernter or at the end  */
+            align-items: center;
+            align-items: flex-end;
+            align-items: stretch;
+           
+        }
+        .item{
+            background-color: skyblue;
+            border: 2px solid yellowgreen;
+            margin: 5px;
+            padding: 3px;
+            width: 150px;
+            height: 200px;
+        }
+
+        #item-1{
+            /* flex properties for flex item  */
+
+            /* change the order of the box */
+            /* higher the order, later it shows up in the container  */
+            order: 2;
+
+            /* takes more space if zoomed out the screen  */
+            flex-grow: 3;
+
+            
+        }
+        #item-2{
+            /* takes more space if zoomed out the screen but lesser than flex=grow :3 */
+            flex-grow: 2;
+        }
+        #item-3{
+            order: 5;
+
+            /* takes lesser space if zoomed in the screen (same as of flex-grow */
+            flex-shrink: 2;
+
+            flex-basis: 130px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+
+
+            /* or simply */
+            /* flex: 2 2 344px */
+            /* flex: grow shrink basis */
+
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is a flexbox</h2>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>
