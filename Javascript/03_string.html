@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, repellendus?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas delectus mollitia nam blanditiis maiores. Nihil labore delectus ducimus ad assumenda, quos excepturi debitis numquam. Sapiente ex iure repellendus. Aliquam velit iste molestiae blanditiis dignissimos tempora ullam voluptates minima vero nostrum, obcaecati accusantium eius amet? Magnam expedita placeat repudiandae optio unde.</p>
+    </div>
+    <script>
+        // String can be declared using double or single quotes both
+        var str = 'Madhvendra';
+        var string = "Javascript BY: ";
+
+        // to use string and variable at same time
+        var temp = `${str} is a nice person`
+        
+        // console.log("output is: "+ string);
+        // console.log("output is: "+ str);
+        //or simply we can do this
+        console.log(string + str);
+
+        console.log(temp);
+
+        // lenth of a variable
+        var len = str.length;
+        console.log(`Length of str is ${len}`);
+
+        console.log("Hello\n\tWorld");
+
+        // To add content in html file using javascript
+        document.getElementById('content').innerHTML = '<h3>This is a heading</h3> '
+        
+    </script>
+</body>
+</html>

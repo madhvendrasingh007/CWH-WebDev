@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and object</title>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab saepe repellendus modi dignissimos veritatis perspiciatis!
+    </div>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        //Object
+        console.log('*******OBJECTS*******')
+        let employee = {                //employee is an object
+            name: "Madhvendra",         //name, salary, age are the "KEY"
+            salary: 1000000,
+            age: 21,
+        }
+        console.log(employee);
+        console.log(employee.name);
+        console.log(employee.salary);
+        console.log(employee.age);
+        
+        //Array
+        console.log('*******ARRAYS*******')
+        let name = [1, 2, 3, "md", "Madhvendra", "madhav"];
+        console.log(name[3]);
+        console.log(name.length);
+        name = name.sort();
+        console.log(name);
+        name.push("This is pused");     //add element
+        console.log(name);
+        name.pop("this is pushed");     //delete element
+        console.log(name);
+
+        let names = new Array(20);
+        console.log(names);             //array with 20 data item
+    </script>
+</body>
+</html>

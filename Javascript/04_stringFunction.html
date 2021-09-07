@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function</title>
+</head>
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        var position = str.indexOf('a');
+        console.log(position);
+
+        //First occurence of a string
+        //is will at 2 bcoz of "is" present in this(th'is')
+        position = str.indexOf('is');
+        //we can overwrite the 'position' variable
+        console.log(position);
+        
+        //Last occurence of a string
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        //substring from a string
+        var substr = str.slice(1,6);
+        //it will print from index 1 to 6-1 only i.e, 1-h 2-i 3-s 4-_ 5-i
+        console.log(substr);
+
+        var substr = str.substring(1,6);
+        //substring and slice have same function but slice can take -ve value but substring will only take +ve ones only 
+        console.log(substr);
+        
+        var substr1 = str.substr(1,6);
+        //it will print from index 1 to 6 only i.e, 1-h 2-i 3-s 4-_ 5-i 6-s
+        console.log(substr1);
+
+        var rep = str.replace('string','car');
+        //it will repalce string with car in rep variable only, not in str variable
+        console.log(str);
+        console.log(rep);
+
+        console.log(rep.toUpperCase());
+        console.log(rep.toLowerCase());
+
+        var newstring = str.concat(' New String');
+        console.log(newstring);
+
+        var strwithWhitespaces = '   this contain                  whitespace';
+        
+        //whitespace will be printed as it is
+        console.log(strwithWhitespaces);
+
+        //trim will remove whitespaces from starting and ending but not in between the line
+        console.log(strwithWhitespaces.trim());
+
+        //print single character at given position
+        var char2 = str.charAt(3);
+        console.log(char2);
+        // simplified code could be
+        console.log(str[3]);
+    </script>
+</body>
+</html>

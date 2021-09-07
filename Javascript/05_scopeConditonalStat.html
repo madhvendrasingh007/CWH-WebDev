@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // var string1 = "This is a string1";
+        // var string1 = "This is a string2";
+        // console.log(string1);
+        //string1 variable will be updated to string2
+        //global variable 
+
+        //"let function" cant upadate 'a' variable out of its scope
+        //mostly use let function 
+        // let a = 'u';    //global variable
+        // {
+        //     let a = 'u6';
+        //     console.log(a);
+        // }
+
+        // const b ="this cannot be changed";
+        // console.log(b);
+        // b = "i want to change this";
+        // console.log(b);
+        //it will show error as b is constant
+
+        let age = 4;
+        if(age>=18){
+            console.log("U can vote");
+        }else if(age<10){
+            console.log('dont ask silly question');
+        }
+        else{
+            console.log("U can't vote");
+        }
+
+        const daysOfWeek = 3;
+        switch (daysOfWeek) {
+            case 1: 
+                console.log("it's Monday");
+                break;
+            case 2: 
+                console.log("it's Tuesday");
+                break;
+            case 3: 
+                console.log("it's Wednesday");
+                break;
+            case 4: 
+                console.log("it's Thursday");
+                break;
+        
+            default:
+                console.log("Wrong Input!!!")
+                break;
+        }
+    </script>
+</body>
+</html>

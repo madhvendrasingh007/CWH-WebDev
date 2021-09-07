@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction: alert,prompt,confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a container.....
+    </div>
+    <script>
+        //alert 
+        alert("This is an alert message");
+    
+    
+        //prompt
+        let name = prompt("What is your name", "Avatar");
+        //by default guest will come in place of avatar if nothing is written
+        console.log(name);
+    
+    
+        //confirm(to send warning)ex: while deleting file a warning will appear to double check
+        let deletePost = confirm("Do you want to delete post");
+        console.log(deletePost);
+        
+        if(deletePost){
+            console.log("Your post has been deleted")
+        }
+        else{
+            console.log("Your post has not been deleted");
+        }
+    
+    </script>
+</body>
+</html>
