@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms and input tags</title>
+</head>
+<body>
+    <h2>This is HTMLform</h2>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>        <!--br tag is not recommended-->
+        <div>
+            <label for="class">Class:</label>:</label>
+            <input type="number" name="myClass" id="class">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="mydate" id="Date">
+        </div>
+        <br>
+        <div>
+            are u eligible? <input type="checkbox" name="" id="">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender" id=""> 
+            Female <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Porche</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="Submit" value="Submit now">
+            <input type="reset" value="reset now">
+        </div>
+        <br>
+        <div>
+            Comments: <textarea name="mytext" id="" cols="100" rows="10"></textarea>
+        </div>
+    </form>
+</body>
+</html>

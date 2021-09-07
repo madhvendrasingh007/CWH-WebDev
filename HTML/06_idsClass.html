@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id and Class</title>
+</head>
+<body>
+    <h3>Ids and classes </h3>
+    <div id="mainBox" class="redBg blackBorder">This is mainBox</div>
+    <!-- id can be used only for one element but class for different element -->
+    <div id="otherBox" class="redBg blackBorder">This is otherBox</div>
+
+    <!-- Emmet -->
+    <!-- . is for class and # is for id ex: span. = span class span# = span id-->
+    <span class="redBg"></span> <!--span.redbg-->
+    <span id="mainSpan"></span> <!--span#mainSpan-->
+    <div class="redbg blackBorder"></div>   <!--div.redBg.blackBorder-->
+
+    <!-- emmet takes div tag as default -->
+    <div class="blackBakground"></div>  <!--.blackBackground-->
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elements using Emmet -->
+    <!-- here tab is used when u write first then cursor goes to second line to write second     -->
+        <span class="myClass myClass2 myClass3">First</span>
+        <span class="myClass myClass2 myClass3">Second</span>
+        <span class="myClass myClass2 myClass3">Third</span>
+        <span class="myClass myClass2 myClass3">Fourth</span>
+</body>
+</html>
